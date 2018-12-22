@@ -13,7 +13,8 @@ const categoryTitles = {
   'essential': 'Priority A: Essential (Error Prevention)',
   'strongly-recommended': 'Priority B: Strongly Recommended (Improving Readability)',
   'recommended': 'Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)',
-  'use-with-caution': 'Priority D: Use with Caution (Potentially Dangerous Patterns)'
+  'use-with-caution': 'Priority D: Use with Caution (Potentially Dangerous Patterns)',
+  'custom': 'Custom rules'
 }
 const categoryIds = Object.keys(categoryTitles)
 const categoryRules = groupBy(rules, (rule) => rule.meta.docs.category || 'uncategorized')
